@@ -7,8 +7,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kalkulacka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="10">
+        Title="MainWindow" Height="200" Width="800" Background="#FF9397EC">
+    <Grid Margin="10" OpacityMask="#FFE63F3F" Background="#FFF7EAEA">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="50"/>
@@ -20,9 +20,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Button Content="Vypočítej" Width="80" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Click="Button_Click"/>
-        <TextBox x:Name="cislo1TextBox" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Text="0" />
-        <TextBox x:Name="cislo2TextBox" VerticalAlignment="Center" Grid.Row="0" Grid.Column="2"  Margin="0,0,10,0" Text="0" />
+        <Button Content="Vypočítej" Width="300" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Click="Button_Click" HorizontalAlignment="Center" Background="#FFFFFEFE"/>
+        <TextBox x:Name="cislo1TextBox" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Text="" />
+        <TextBox x:Name="cislo2TextBox" VerticalAlignment="Center" Grid.Row="0" Grid.Column="2"  Margin="0,0,10,0" Text="" />
         <ComboBox x:Name="ComboBox" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1"  Margin="0,0,10,0" SelectedIndex="0">
             <ComboBoxItem Content="+"/>
             <ComboBoxItem Content="-"/>
@@ -30,6 +30,6 @@
             <ComboBoxItem Content="/"/>
         </ComboBox>
         <TextBlock Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center">=</TextBlock>
-        <TextBlock x:Name="vysledekTextBlock" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center">0</TextBlock>
+        <TextBlock x:Name="vysledekTextBlock" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
     </Grid>
 </Window>
